@@ -76,29 +76,37 @@
 }
 
 /* ---------- sliders ------------------- */
-.swiper {
+.slider{
   width: 100%;
   height: 100%;
 }
-.swiper-pagination {
+.swiper {
+ 
+}
+.swiper .swiper-pagination {
   right: 2% !important;
   border-radius: 141.316px;
   padding: 0.6em 0.4em;
   background: #fff;
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.15);
 }
-.swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   width: 1em !important;
   height: 1em !important;
   background: #373737;
 }
-.swiper-pagination-bullet-active {
+.swiper .swiper-pagination-bullet-active {
   width: 1em !important;
   height: 1em !important;
   border: 0.2em solid red !important;
   background-color: transparent !important;
 }
 
+
+.swiper-staff{
+  /* height: 50%; */
+  overflow: hidden;
+}
 /*---------------------------- content------------------------- */
 .content {
   height: 93%;
@@ -115,7 +123,7 @@
   flex-direction: column;
   padding: 0 5%;
 }
-.content-title {
+.content-first {
   background-color: #004a99;
 }
 
@@ -160,9 +168,44 @@
 }
 .card-stats .text-number {
   color: #004a9b;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "ExoBold";
 }
 .card-stats .text-additional {
   font-size: 1.2em;
 }
+.content-staff{
+
+}
+.staff-title{
+
+}
+.staff-title h1{
+
+}
+.card-staff{
+  
+}
+.card-staff .card-top{
+
+}
+.card-staff .card-bottom{
+
+}
+.card-staff .card-avatar{
+
+}
+.card-staff .card-name{
+
+}
+.card-staff .card-position{
+
+}
+.card-staff .card-qr{
+
+}
+.card-staff .card-invite{
+
+}
+
+

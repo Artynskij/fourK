@@ -3,7 +3,8 @@ import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
-    loop: true,
+    loop: false,
+    
   
     // If we need pagination
     pagination: {
@@ -11,10 +12,10 @@ const swiper = new Swiper('.swiper', {
     },
   
     // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
     mousewheel: { eventsTarget: 'body', },
   
     // And if we need scrollbar
@@ -22,4 +23,18 @@ const swiper = new Swiper('.swiper', {
     //   el: '.swiper-scrollbar',
     // //   draggable: true,
     // },
+  });
+const swiperStaff = new Swiper('.swiper-staff', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 3,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // mousewheel: { eventsTarget: 'body', },
+  
+  
   });
