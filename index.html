@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -23,10 +28,113 @@
           <div class="navbar-item">Контакты</div>
         </div>
       </header>
-      <section class=""></section>
-      <section>1</section>
-      <section>1</section>
+      <section class="content">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- 1 step -->
+            <div class="swiper-slide">
+              <section class="content-title"></section>
+            </div>
+
+            <!-- 2 step -->
+            <div class="swiper-slide">
+              <section class="content-stats">
+                <div class="stats-title"><h1>статистика</h1></div>
+                <div class="stats-content">
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-1.svg" alt="">
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>60</div>
+                        <div class="text-additional">судов в собственности. 12 буксиров и барж, построены по собственным проектам</div>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-4.svg" alt="">
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>850</div>
+                        <div class="text-additional">проектов морской и речной логистики в портфолио</div>
+                      
+                    </div>
+                  </div>
+
+
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-2.svg" alt="">
+                      
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>3,5 млн т</div>
+                        <div class="text-additional">негабаритного груза перевезено за 2018-2022г</div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-5.svg" alt="">
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>7</div>
+                        <div class="text-additional">долгосрочных проектов в сфере нефтеразведки и развития СМП</div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-3.svg" alt="">
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>100</div>
+                        <div class="text-additional">береговых специалистов в штате:  логисты, инженеры, крюинг-менеджеры и другие профессионалы морской отрасли</div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="card-stats">
+                    <div class="card-img">
+                      <img src="./img/stats-6.svg" alt="">
+                    </div>
+                    <div class="card-text">
+                      
+                        <div class="text-number">>600</div>
+                        <div class="text-additional">опытных моряков и речников, обеспечивающие безопасную и качественную работу флота.</div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="radar"></div>
+              </section>
+            </div>
+            <!-- 3 step -->
+            <div class="swiper-slide">Slide 3</div>
+            <!-- 4 step -->
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
     </div>
-    <script src="./app.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
   </body>
 </html>

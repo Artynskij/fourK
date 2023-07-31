@@ -77,26 +77,41 @@ select {
   }
 }
 body{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  /* line-height: 24px; */
+  font-family: "ExoReg";
 }
 
 @media (min-width:2000px) {
   body{
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 25px;
+    /* line-height: 36px; */
   }
 }
 @media (min-width:3000px) {
   body{
     font-size: 40px;
-    line-height: 48px;
+    /* line-height: 48px; */
   }
 }
 @media (min-width:4000px) {
   body{
     font-size: 50px;
-    line-height: 60px;
+    /* line-height: 60px; */
   }
+}
+@media (min-width:5000px) {
+  body{
+    font-size: 60px;
+    /* line-height: 70px; */
+  }
+}
+h1{
+  text-transform: uppercase;
+  font-family: 'ExoBold';
+  font-size: 3em;
+  /* line-height: 1em; */
+  padding: 2em 0;
+
 }
