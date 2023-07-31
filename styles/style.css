@@ -52,6 +52,7 @@ a:not([class]) {
 img {
   max-width: 100%;
   display: block;
+  max-height: 100%;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
@@ -85,11 +86,11 @@ body{
 
 @media (min-width:2000px) {
   body{
-    font-size: 25px;
+    font-size: 20px;
     /* line-height: 36px; */
   }
 }
-@media (min-width:3000px) {
+@media (min-width:3340px) {
   body{
     font-size: 40px;
     /* line-height: 48px; */
