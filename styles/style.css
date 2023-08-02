@@ -96,7 +96,7 @@ body{
     /* line-height: 48px; */
   }
 }
-@media (min-width:4000px) {
+@media (min-width:3800px) {
   body{
     font-size: 50px;
     /* line-height: 60px; */
@@ -113,6 +113,5 @@ h1{
   font-family: 'ExoBold';
   font-size: 3em;
   /* line-height: 1em; */
-  padding: 1em 0;
-
+  padding: .4em 0;
 }

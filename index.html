@@ -25,7 +25,9 @@
           <div class="navbar-item">Услуги</div>
           <div class="navbar-item">Проекты</div>
           <div class="navbar-item">Партнеры</div>
-          <div class="navbar-item">Отправить визитку</div>
+          <div class="navbar-item open__modal" data-path="invite-popup--form">
+            Отправить визитку
+          </div>
           <div class="navbar-item">Контакты</div>
         </div>
       </header>
@@ -270,7 +272,10 @@
                   путями
                 </div>
                 <div class="services-content">
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-2.svg" alt="" />
                     </div>
@@ -279,7 +284,10 @@
                     </div>
                   </div>
 
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-2.svg" alt="" />
                     </div>
@@ -288,7 +296,10 @@
                     </div>
                   </div>
 
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-3.svg" alt="" />
                     </div>
@@ -297,7 +308,10 @@
                     </div>
                   </div>
 
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-4.svg" alt="" />
                     </div>
@@ -306,7 +320,10 @@
                     </div>
                   </div>
 
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-5.svg" alt="" />
                     </div>
@@ -315,7 +332,10 @@
                     </div>
                   </div>
 
-                  <div class="services-card">
+                  <div
+                    class="services-card open__modal"
+                    data-path="product-popup"
+                  >
                     <div class="card-img">
                       <img src="./img/services-6.svg" alt="" />
                     </div>
@@ -325,7 +345,6 @@
                 <marquee
                   class="services-marquee"
                   hspace="pixels"
-                  behavior="alternate"
                   scrollamount="30"
                   direction="right"
                 >
@@ -356,7 +375,9 @@
               <section class="content-product">
                 <div class="section-title"><h1>ФЛОТ КОМПАНИИ</h1></div>
                 <div class="product-part__section">
-                  <div class="product-part__section-title"><div>буксиры</div></div>
+                  <div class="product-part__section-title">
+                    <div>буксиры</div>
+                  </div>
                   <div class="product-part__section-subtitle">
                     В нашем арсенале представлен модернизированный буксирный
                     флот советской постройки – типы МБ, ОТА-800,
@@ -364,49 +385,758 @@
                     5100 л.с., включая суда, построенные по собственным проектам
                   </div>
                   <div class="swiper-product-first slider">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                      <!-- Slides -->
                       <div class="swiper-slide">
                         <div class="card-product">
-                          <div class="card-img"><img src="./img/product_mock_img.png" alt=""></div>
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider1}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
                           <div class="card-name">{ИМЯ}</div>
                           <div class="card-type">ТИП / МОЩНОСТЬ:</div>
                           <div class="card-power">КЛАСС:</div>
                         </div>
                       </div>
-                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider2}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider3}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider4}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider5}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider6}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider7}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-slide">Slide 2</div>
                       <div class="swiper-slide">Slide 3</div>
                       <div class="swiper-slide">Slide 4</div>
                       <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div> -->
                     </div>
-                    <!-- If we need pagination -->
-
-                    <!-- If we need navigation buttons -->
                     <div
                       class="swiper-product-first-button-prev icon-arrow"
                     ></div>
                     <div
                       class="swiper-product-first-button-next icon-arrow"
                     ></div>
+                  </div>
+                </div>
+                <div class="product-part__section">
+                  <div class="product-part__section-title">
+                    <div>баржи</div>
+                  </div>
+                  <div class="product-part__section-subtitle">
+                    В собственности компании имеется более 30 барж для перевозок
+                    негабаритных, крупнотоннажных, навалочных грузов,
+                    трубошпунта, а также ветроэнергетических установок
+                  </div>
+                  <div class="swiper-product-second slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider1}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider2}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider3}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider4}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider5}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider6}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{slider7}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                        <div class="card-product">
+                          <div class="card-img">
+                            <img src="./img/product_mock_img.png" alt="" />
+                          </div>
+                          <div class="card-name">{ИМЯ}</div>
+                          <div class="card-type">ТИП / МОЩНОСТЬ:</div>
+                          <div class="card-power">КЛАСС:</div>
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div> -->
+                    </div>
+                    <div
+                      class="swiper-product-second-button-prev icon-arrow"
+                    ></div>
+                    <div
+                      class="swiper-product-second-button-next icon-arrow"
+                    ></div>
 
-                    <!-- If we need scrollbar -->
                     <!-- <div class="swiper-scrollbar"></div> -->
                   </div>
                 </div>
               </section>
             </div>
+            <!-- projects step  -->
+            <div class="swiper-slide">
+              <section class="content-projects">
+                <div class="section-title"><h1>ТОП ПРОЕКТОВ 2022-2023</h1></div>
+                <div class="swiper-projects slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-project">
+                        <div class="card-img">
+                          <img src="./img/project.png" alt="project" />
+                        </div>
+                        <div class="card-text">
+                          Проект по перевозке Проект по перевозке
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-staff-button-prev icon-arrow"></div>
+                  <div class="swiper-staff-button-next icon-arrow"></div>
+                </div>
+                <button
+                  class="projects-button open__modal"
+                  data-path="projects-popup--form"
+                >
+                  ЗАПРОСИТЬ ПОРТФОЛИО ПРОЕКТОВ
+                </button>
+              </section>
+            </div>
+            <!-- child__company step  -->
+            <div class="swiper-slide">
+              <section class="content-child__company">
+                <div class="section-title"><h1>ДОЧЕРНИЕ КОМПАНИИ</h1></div>
+                <div class="swiper-child__company slider">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="slide-child__company">
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">ЗАО “КРАНСЕРВИС”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Партнер.svg" alt="" />
+                          </div>
+                          <div class="card-text">ООО “ПАРТНЕР”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_МОРБАЗА.svg" alt="" />
+                          </div>
+                          <div class="card-text">ООО “МОРБАЗА”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">ООО “АПЕЛЬСИН”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Компас.svg" alt="" />
+                          </div>
+                          <div class="card-text">КБ “КОМПАС”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_SSG.svg" alt="" />
+                          </div>
+                          <div class="card-text">SILVER SHIPPING CASPIAN</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide-child__company">
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">ЗАО “КРАНСЕРВИС”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Партнер.svg" alt="" />
+                          </div>
+                          <div class="card-text">ООО “ПАРТНЕР”</div>
+                        </div>
+                        <!-- <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img"><img src="./img/logo/Лого_МОРБАЗА.svg" alt=""></div>
+                          <div class="card-text">ООО “МОРБАЗА”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img"><img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt=""></div>
+                          <div class="card-text">ООО “АПЕЛЬСИН”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img"><img src="./img/logo/Лого_Компас.svg" alt=""></div>
+                          <div class="card-text">КБ “КОМПАС”</div>
+                        </div>
+                        <div class="card-child__company open__modal" data-path="child-popup">
+                          <div class="card-img"><img src="./img/logo/Лого_SSG.svg" alt=""></div>
+                          <div class="card-text">SILVER SHIPPING CASPIAN</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-staff-button-prev icon-arrow"></div>
+                  <div class="swiper-staff-button-next icon-arrow"></div>
+                </div>
+              </section>
+            </div>
+            <!-- partners step  -->
+            <div class="swiper-slide">
+              <section class="content-partners">
+                <div class="section-title"><h1>Наши партнеры</h1></div>
+                <div class="partners-subtitle">
+                  у нас только идеальные партнеры
+                </div>
+                <div class="swiper-partners slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slide-partners">
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">НОВАТЭК</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Партнер.svg" alt="" />
+                          </div>
+                          <div class="card-text">ГАЗПРОМ</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_МОРБАЗА.svg" alt="" />
+                          </div>
+                          <div class="card-text">ЛУКОЙЛ</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">ВОЛГО-БАЛТИК ЛОГИСТИК</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Компас.svg" alt="" />
+                          </div>
+                          <div class="card-text">Таманьнефтегаз</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_SSG.svg" alt="" />
+                          </div>
+                          <div class="card-text">
+                            ГК «Морские проекты и технологии
+                          </div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_SSG.svg" alt="" />
+                          </div>
+                          <div class="card-text">ФЕРТОИНГ</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_SSG.svg" alt="" />
+                          </div>
+                          <div class="card-text">МРТС</div>
+                        </div>
+                        <div class="card-partners">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_SSG.svg" alt="" />
+                          </div>
+                          <div class="card-text">ФЕРТОИНГ</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slide-child__company">
+                        <div class="card-child__company">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt="" />
+                          </div>
+                          <div class="card-text">ЗАО “КРАНСЕРВИС”</div>
+                        </div>
+                        <div class="card-child__company">
+                          <div class="card-img">
+                            <img src="./img/logo/Лого_Партнер.svg" alt="" />
+                          </div>
+                          <div class="card-text">ООО “ПАРТНЕР”</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-staff-button-prev icon-arrow"></div>
+                  <div class="swiper-staff-button-next icon-arrow"></div>
+                </div>
+                <div class="button-gotop">
+                  <div class="icon-arrow"></div>
+                </div>
+              </section>
+            </div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
+          <div class="swiper-pagination"></div>
         </div>
       </section>
+      <div class="modals">
+        <div class="modal-overlay">
+          <div class="modal modal--1" data-target="projects-popup--form">
+            <section class="form">
+              <div class="section-title">
+                <h1>ЗАПРОСИТЬ ПОРТФОЛИО ПРОЕКТОВ</h1>
+              </div>
+              <div class="form-subtitle">
+                Заполните, пожалуйста, поля ниже, в ответ мы направим Вам
+                презентацию с нашими ключевыми проектами
+              </div>
+              <div class="form-body">
+                <!-- <div class="body-container--inputs"> -->
+                <div class="body-block-input">
+                  <div class="input-title">ВАШЕ ИМЯ</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">МОБИЛЬНЫЙ ТЕЛЕФОН</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="form-qrtext">
+                  Или отсканируйте QR код и напишите нам с телефона
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">E-MAIL</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">КОМПАНИЯ, СФЕРА ДЕЯТЕЛЬНОСТИ</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="form-qrimg">
+                  <img src="./img/qr-code.svg" alt="" />
+                </div>
+                <div class="form-checkbox">
+                  <label class="custom-radio">
+                    <input
+                      type="checkbox"
+                      name="gender"
+                      class="visually-hidden"
+                    />
+                    <span></span>
+                  </label>
+                  <div>
+                    Согласиться с обработкой <br />Ваших персональных данных
+                  </div>
+                </div>
+                <div class="form-button">ОТПРАВИТЬ</div>
+                <!-- </div> -->
+              </div>
+              <div class="form-smallweight">
+                Полный текст соглашения об обработке персональных данных Вы
+                можете найти на нашем сайте www.mwship.com
+              </div>
+              <div class="close-modal">x</div>
+            </section>
+          </div>
+          <div class="modal modal--2" data-target="invite-popup--form">
+            <section class="form">
+              <div class="section-title"><h1>ОТПРАВИТЬ НАМ ВИЗИТКУ</h1></div>
+              <div class="form-subtitle">
+                Заполните, пожалуйста, поля ниже, чтобы отправить нам Вашу
+                визитку. После мероприятия мы свяжемся с Вами и обсудим
+                сотрудничество!
+              </div>
+              <div class="form-body">
+                <!-- <div class="body-container--inputs"> -->
+                <div class="body-block-input">
+                  <div class="input-title">ВАШЕ ИМЯ</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">МОБИЛЬНЫЙ ТЕЛЕФОН</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="form-qrtext">
+                  Или отсканируйте QR код и напишите нам с телефона
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">E-MAIL</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="body-block-input">
+                  <div class="input-title">КОМПАНИЯ, СФЕРА ДЕЯТЕЛЬНОСТИ</div>
+                  <input type="text" class="input-form" />
+                  <div class="input-line"></div>
+                </div>
+                <div class="form-qrimg">
+                  <img src="./img/qr-code.svg" alt="" />
+                </div>
+                <div class="form-checkbox">
+                  <label class="custom-radio">
+                    <input
+                      type="checkbox"
+                      name="gender"
+                      class="visually-hidden"
+                    />
+                    <span></span>
+                  </label>
+                  <div>
+                    Согласиться с обработкой <br />Ваших персональных данных
+                  </div>
+                </div>
+                <div class="form-button">ОТПРАВИТЬ</div>
+                <!-- </div> -->
+              </div>
+              <div class="form-smallweight">
+                Полный текст соглашения об обработке персональных данных Вы
+                можете найти на нашем сайте www.mwship.com
+              </div>
+              <div class="close-modal">x</div>
+            </section>
+          </div>
+          <div class="modal product-modal" data-target="product-popup">
+            <section class="product-modal--section">
+              <!-- <div class="modal-card"> -->
+              <div class="card-slider">
+                <div class="swiper-modal slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./img/services-1.svg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/services-3.svg" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./img/services-2.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="swiper-modal-pagination"></div>
+
+                  <div class="swiper-staff-button-prev icon-arrow"></div>
+                  <div class="swiper-staff-button-next icon-arrow"></div>
+
+                 
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="section-title">
+                  <h1>Название проекта или Услугу</h1>
+                </div>
+                <div class="text-description">
+                  ОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ
+                  ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА
+                  ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ
+                  ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ
+                  ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА
+                  ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ
+                  ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ
+                  ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА
+                  ОПИСАНИЕ ПРОЕКТА
+                </div>
+              </div>
+              <!-- </div> -->
+              <div class="close-modal">x</div>
+            </section>
+          </div>
+          <div class="modal child-modal" data-target="child-popup">
+            <section class="child-modal--section">
+              
+              <div class="card-img"><img src="./img/logo/Лого_АПЕЛЬСИН.svg" alt=""></div>
+              <div class="card-text">
+                <div class="section-title">
+                  <h1>Название компании</h1>
+                </div>
+                <div class="text-description">
+                  ОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ
+                  ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА
+                  ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ
+                  ПРОЕКТА ОПИСАНИЕ ПРОЕКТАОПИСАНИЕ ПРОЕКТА ОПИСАНИЕ
+                 
+                </div>
+                <div class="text-site">www.dis.com</div>
+                <div class="text-qr"><img src="./img/qr-code.svg" alt="qr"></div>
+              </div>
+              <!-- </div> -->
+              <div class="close-modal">x</div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="./js/app.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
   </body>
 </html>
