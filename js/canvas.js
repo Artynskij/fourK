@@ -6,10 +6,12 @@ canvas.height = 1500;
 
 
 
-let bezierLineOne = [350, 150, 100, 300, 450, 0]
+let bezierLineOne = [350, 250, 100, 300, 450, 0]
 let bezierLineTwo = [150, 100, 300, 300, 400, 0]
 
-let lineDash = [20, 15]
+let lineDashOne = [20, 15]
+
+let lineDashTwo = [20, 2]
 
 let test = false
 setInterval(() => {
@@ -22,8 +24,11 @@ animation({
   update() {
     
     if(test) {
-        lineDash[0] = lineDash[0] +.03 
-        lineDash[1] = lineDash[1] +.03 
+        lineDashOne[0] = lineDashOne[0] +.03 
+        lineDashTwo[0] = lineDashTwo[0] + .01
+        lineDashOne[1] = lineDashOne[1] +.03 
+        lineDashTwo[1] = lineDashTwo[1] + .01
+
         // bezierLineOne[0] = bezierLineOne[0]+.2
         // bezierLineOne[1] = bezierLineOne[1]+.2
         // bezierLineOne[2] = bezierLineOne[2]+.2
@@ -40,8 +45,11 @@ animation({
         // newTwo = bezierLineOne
         console.log("if");
     } else {
-        lineDash[0] = lineDash[0] -.03 
-        lineDash[1] = lineDash[1] -.03 
+        lineDashOne[0] = lineDashOne[0] -.03 
+        lineDashTwo[0] = lineDashTwo[0] - .01
+        lineDashOne[1] = lineDashOne[1] -.03 
+        lineDashTwo[1] = lineDashTwo[1] - .01
+        
         // bezierLineOne[0] = bezierLineOne[0]-.2
         // bezierLineOne[1] = bezierLineOne[1]-.2
         // bezierLineOne[2] = bezierLineOne[2]-.2
@@ -67,8 +75,8 @@ animation({
     
   },
   render() {
-    createLineOne(bezierLineOne, lineDash);
-    createLineTwo(bezierLineTwo);
+    createLineOne(bezierLineOne, lineDashOne);
+    createLineTwo(bezierLineTwo, lineDashTwo);
   },
 });
 
@@ -112,12 +120,12 @@ function createLineOne(bezierCoordinates ,lineDash) {
   context.lineWidth = 4;
   context.stroke();
 }
-function createLineTwo(bezierCoordinates) {
+function createLineTwo(bezierCoordinates, lineDashTwo) {
   context.beginPath();
 
   context.moveTo(0, 400);
 
-  context.setLineDash([]);
+  context.setLineDash(lineDashTwo);
   context.bezierCurveTo(...bezierCoordinates);
 
   context.strokeStyle = "#194F9C";
