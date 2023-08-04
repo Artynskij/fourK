@@ -21,24 +21,27 @@
           <div class="logo-date">18 СЕНТЯБРЯ 2023 г. 08:50</div>
         </div>
         <div class="header__navbar">
-          <div class="navbar-item">Флот</div>
-          <div class="navbar-item">Услуги</div>
-          <div class="navbar-item">Проекты</div>
-          <div class="navbar-item">Партнеры</div>
+          <div class="navbar-item navbar-flot">Флот</div>
+          <div class="navbar-item navbar-services">Услуги</div>
+          <div class="navbar-item navbar-projects">Проекты</div>
+          <div class="navbar-item navbar-partners">Партнеры</div>
           <div class="navbar-item open__modal" data-path="invite-popup--form">
             Отправить визитку
           </div>
-          <div class="navbar-item">Контакты</div>
+          <div class="navbar-item navbar-contacts">Контакты</div>
         </div>
       </header>
       <section class="content">
+        
         <div class="swiper slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <!-- 1 step -->
             <div class="swiper-slide">
-              <section class="content-first"></section>
+              <section class="content-first">
+                
+              </section>
             </div>
 
             <!-- stats step -->
@@ -122,7 +125,39 @@
                     </div>
                   </div>
                 </div>
-                <div class="radar"></div>
+                <div class="stats-radar"><img src="./img/elem_Compass_minimal.svg" alt=""></div>
+                <div class="stats-line-blue">
+                  <!-- <img src="./img/line blue.svg" alt=""> -->
+                  <canvas  style="border: 1px solid black;" id="canvas">
+                    <!-- <svg width="2238" height="1584" viewBox="0 0 2238 1584" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-2021.39 1581C-1877.49 1501.85 -1722.31 1243.95 -1303.67 1365.14C-885.021 1486.33 -348.498 1516.24 -46.2972 1203.25C255.903 890.253 228.921 695.98 822.53 566.465C1183.1 487.796 1368.56 351.376 1605.26 129.216C1758.25 -14.367 1898.26 -249.859 2236.4 -340.134" stroke="url(#paint0_linear_182_11239)" stroke-width="6"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_182_11239" x1="137.746" y1="-340.134" x2="137.746" y2="2552.92" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#194F9C"/>
+                      <stop offset="0.390625" stop-color="#194F9C" stop-opacity="0.47"/>
+                      <stop offset="0.880208" stop-color="#194F9C" stop-opacity="0.42"/>
+                      </linearGradient>
+                      </defs>
+                    </svg> -->
+                  </canvas>
+                 
+                </div>
+                <div class="stats-line-red">
+                  <!-- <img src="./img/line rED.svg" alt=""> -->
+                  <!-- <canvas> -->
+                    <!-- <svg width="2496" height="1459" viewBox="0 0 2496 1459" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-2047.47 1451.49C-1904.8 1392.35 -1718.69 1333.95 -1303.67 1424.5C-888.64 1515.05 -470.003 1410.13 -170.415 1176.26C-23.7876 1061.8 393.964 790.614 517.594 674.547C646.564 553.466 1040.81 514.182 1341.26 464.773C1929.74 368.001 1749.52 -51.8663 2495.33 -208.395" stroke="url(#paint0_linear_182_11240)" stroke-width="4" stroke-linejoin="bevel" stroke-dasharray="31 31"/>
+                      <defs>
+                      <linearGradient id="paint0_linear_182_11240" x1="5.79131" y1="-54.1225" x2="5.79131" y2="1974.6" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#E20613"/>
+                      <stop offset="0.390625" stop-color="#194F9C" stop-opacity="0.47"/>
+                      <stop offset="0.880208" stop-color="#E20613"/>
+                      </linearGradient>
+                      </defs>
+                    </svg> -->
+                  <!-- </canvas> -->
+                  
+                </div>
               </section>
             </div>
             <!-- staff step -->
@@ -264,7 +299,7 @@
             <div class="swiper-slide">
               <section class="content-services">
                 <div class="section-title">
-                  <h1>СОТРУДНИКИ СЕГОДНЯ НА МЕРОПРИЯТИИ</h1>
+                  <h1>УСЛУГИ</h1>
                 </div>
                 <div class="services-subtitle">
                   Предоставляем полный комплекс услуг по перевозке негабаритных,
@@ -942,9 +977,24 @@
               </section>
             </div>
           </div>
-
           <div class="swiper-pagination"></div>
         </div>
+      </section>
+      <section class="main-screen">
+        <div class="content">
+          <div class="gif-bg"><img src="./img/mockGif.gif"></img></div>
+          <div class="main-screen--header">
+           <img class="logo" src="./img/logo/logo main screeen.svg" alt="">
+            <div class="title">СУДОХОДНАЯ КОМПАНИЯ МОРВЕННА</div>
+            <div class="subtitle">Морская и речная перевозка негабаритных и тяжеловесных грузов</div>
+          </div>
+          <div class="main-screen--footer">
+            
+              <img src="./img/handToClick.svg" alt="">
+              <div class="click-text">Нажмите, чтобы начать</div>
+          </div>
+        </div>
+        
       </section>
       <div class="modals">
         <div class="modal-overlay">
@@ -1138,5 +1188,6 @@
       </div>
     </div>
     <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/canvas.js"></script>
   </body>
 </html>

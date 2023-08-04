@@ -74,21 +74,18 @@ const swiperProductTwo = new Swiper(".swiper-product-second", {
 const swiperModal = new Swiper(".swiper-modal", {
   direction: "horizontal",
 
- 
   loop: false,
   slidesPerView: 1,
   pagination: {
     el: ".swiper-modal-pagination",
     clickable: true,
-    bulletClass: 'swiper-modal-pagination-bullet',
-    bulletActiveClass: 'swiper-modal-pagination-bullet-active',
+    bulletClass: "swiper-modal-pagination-bullet",
+    bulletActiveClass: "swiper-modal-pagination-bullet-active",
   },
   navigation: {
     nextEl: ".swiper-staff-button-next",
     prevEl: ".swiper-staff-button-prev",
-    
   },
-  
 });
 
 // _______ modal
@@ -136,6 +133,20 @@ const goTop = document.querySelector(".button-gotop");
 goTop.addEventListener("click", () => {
   swiper.slideTo(0, 3000);
 });
+// _____ navBar
+document.querySelector(".navbar-flot").addEventListener("click", () => {
+  swiper.slideTo(4, 3000);
+});
+document.querySelector(".navbar-services").addEventListener("click", () => {
+  swiper.slideTo(3, 3000);
+});
+document.querySelector(".navbar-projects").addEventListener("click", () => {
+  swiper.slideTo(5, 3000);
+});
+document.querySelector(".navbar-partners").addEventListener("click", () => {
+  swiper.slideTo(7, 3000);
+});
+// document.querySelector('.navbar-contacts').addEventListener('click', () => {swiper.slideTo(0, 3000);})
 
 // _______  checkboxex
 const fileInput = document.querySelector(".custom-file input");
@@ -162,3 +173,87 @@ fileInput?.addEventListener("change", (e) => {
     )}`;
   }
 });
+
+// ______ hiddenMainScreen
+
+const mainScreen = document.querySelector(".main-screen");
+const content = document.querySelector(".wrapper");
+let myTimer = null;
+
+mainScreen.addEventListener("click", function () {
+  mainScreen.classList.add("main-screen--unvisible");
+  if (myTimer !== null) {
+    clearTimeout(myTimer);
+    myTimer = null;
+  }
+
+  myTimer = setTimeout(someWork, 500000);
+});
+
+content.addEventListener("click", () => {
+  if (myTimer !== null) {
+    clearTimeout(myTimer);
+    myTimer = null;
+  }
+
+  myTimer = setTimeout(someWork, 500000);
+});
+function someWork() {
+  mainScreen.classList.remove("main-screen--unvisible");
+}
+// animation ___________
+// const canvas = document.querySelector("#canvas");
+// const context = canvas.getContext("2d");
+// canvas.width = 250;
+// canvas.height = 250;
+// console.log(Math.PI);
+
+// let angle = 0;
+
+// animation({
+//   clear() {
+//     context.clearRect(0, 0, canvas.width, canvas.height);
+//   },
+//   update() {
+//     angle += Math.PI * 0.01;
+//   },
+//   render() {
+//     context.beginPath();
+//     context.arc(
+//       canvas.width / 2 + 100 * Math.cos(angle),
+//       canvas.height / 2 + 100 * Math.sin(angle),
+//       50,
+//       0,
+//       Math.PI * 2
+//     );
+//     context.fillStyle = "green";
+//     context.fill();
+//   },
+// });
+
+// function animation(obj) {
+//   const { clear, update, render } = obj;
+//   let pTimestamp = 0;
+
+//   requestAnimationFrame(tick);
+
+//   function tick(timestamp) {
+//     requestAnimationFrame(tick);
+
+//     const diff = timestamp - pTimestamp;
+//     pTimestamp = timestamp;
+//     const fps = 1000/ diff
+//     const secondPart = fps / 1000
+
+//     const params = {
+//       timestamp,
+//       pTimestamp,
+//       diff,
+//       fps,
+//       secondPart
+//     }
+//     update(params)
+//     clear()
+//     render(params)
+//   }
+// }
