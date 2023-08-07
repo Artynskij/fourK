@@ -78,19 +78,38 @@ select {
   }
 }
 body{
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   /* line-height: 24px; */
   font-family: "ExoReg";
+  /* touch-action: none; */
 }
 
 @media (min-width:2000px) {
+  body{
+    font-size: 18px;
+    /* line-height: 36px; */
+  }
+}
+@media (min-width:1300px) {
   body{
     font-size: 20px;
     /* line-height: 36px; */
   }
 }
-@media (min-width:3340px) {
+@media (min-width:1700px) {
+  body{
+    font-size: 30px;
+    /* line-height: 48px; */
+  }
+}
+@media (min-width:2500px) {
+  body{
+    font-size: 35px;
+    /* line-height: 48px; */
+  }
+}
+@media (min-width:3000px) {
   body{
     font-size: 40px;
     /* line-height: 48px; */
@@ -115,3 +134,4 @@ h1{
   /* line-height: 1em; */
   padding: .4em 0;
 }
+

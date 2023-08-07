@@ -43,13 +43,13 @@ animation({
         // bezierLineTwo[4] = bezierLineTwo[4]+.1
         // bezierLineTwo[5] = bezierLineTwo[5]
         // newTwo = bezierLineOne
-        console.log("if");
+        // console.log("if");
     } else {
         lineDashOne[0] = lineDashOne[0] -.03 
         lineDashTwo[0] = lineDashTwo[0] - .01
         lineDashOne[1] = lineDashOne[1] -.03 
         lineDashTwo[1] = lineDashTwo[1] - .01
-        
+
         // bezierLineOne[0] = bezierLineOne[0]-.2
         // bezierLineOne[1] = bezierLineOne[1]-.2
         // bezierLineOne[2] = bezierLineOne[2]-.2
@@ -63,7 +63,7 @@ animation({
         // bezierLineTwo[3] = bezierLineTwo[3]+.2
         // bezierLineTwo[4] = bezierLineTwo[4]-.1
         // bezierLineTwo[5] = bezierLineTwo[5]+1
-        console.log("else");
+        // console.log("else");
     }
     // if(bezierLineTwo[0] > 400) {
 
@@ -117,7 +117,7 @@ function createLineOne(bezierCoordinates ,lineDash) {
   context.bezierCurveTo(...bezierCoordinates);
   context.setLineDash(lineDash);
   context.strokeStyle = "#E20613";
-  context.lineWidth = 4;
+  context.lineWidth = 3;
   context.stroke();
 }
 function createLineTwo(bezierCoordinates, lineDashTwo) {
@@ -129,6 +129,6 @@ function createLineTwo(bezierCoordinates, lineDashTwo) {
   context.bezierCurveTo(...bezierCoordinates);
 
   context.strokeStyle = "#194F9C";
-  context.lineWidth = 4;
+  context.lineWidth = 3;
   context.stroke();
 }

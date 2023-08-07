@@ -7,6 +7,7 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  speed: 500,
   // mousewheelControl: true,
   parallax: true,
   // mousewheel: { eventsTarget: "body" },
@@ -15,7 +16,7 @@ const swiperStaff = new Swiper(".swiper-staff", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 3,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-staff-button-next",
     prevEl: ".swiper-staff-button-prev",
@@ -25,7 +26,7 @@ const swiperProjects = new Swiper(".swiper-projects", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 3,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-staff-button-next",
     prevEl: ".swiper-staff-button-prev",
@@ -35,7 +36,7 @@ const swiperChildCompany = new Swiper(".swiper-child__company", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 1,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-staff-button-next",
     prevEl: ".swiper-staff-button-prev",
@@ -45,7 +46,7 @@ const swiperPartners = new Swiper(".swiper-partners", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 1,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-staff-button-next",
     prevEl: ".swiper-staff-button-prev",
@@ -55,7 +56,7 @@ const swiperProductOne = new Swiper(".swiper-product-first", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 3,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-product-first-button-next",
     prevEl: ".swiper-product-first-button-prev",
@@ -65,7 +66,7 @@ const swiperProductTwo = new Swiper(".swiper-product-second", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 3,
-
+  speed: 500,
   navigation: {
     nextEl: ".swiper-product-second-button-next",
     prevEl: ".swiper-product-second-button-prev",
@@ -73,7 +74,7 @@ const swiperProductTwo = new Swiper(".swiper-product-second", {
 });
 const swiperModal = new Swiper(".swiper-modal", {
   direction: "horizontal",
-
+  speed: 500,
   loop: false,
   slidesPerView: 1,
   pagination: {
@@ -88,7 +89,7 @@ const swiperModal = new Swiper(".swiper-modal", {
   },
 });
 
-// _______ modal
+// _____________________________________________________________________________ modal
 
 const butOpenModal = document.querySelectorAll(".open__modal");
 const btns = document.querySelectorAll(".btn");
@@ -128,12 +129,12 @@ modalOverlay.addEventListener("click", (e) => {
   }
 });
 
-// ____________ gotTop
+// _____________________________________________________________________________ gotTop
 const goTop = document.querySelector(".button-gotop");
 goTop.addEventListener("click", () => {
   swiper.slideTo(0, 3000);
 });
-// _____ navBar
+// _____________________________________________________________________________ navBar
 document.querySelector(".navbar-flot").addEventListener("click", () => {
   swiper.slideTo(4, 3000);
 });
@@ -148,7 +149,50 @@ document.querySelector(".navbar-partners").addEventListener("click", () => {
 });
 // document.querySelector('.navbar-contacts').addEventListener('click', () => {swiper.slideTo(0, 3000);})
 
-// _______  checkboxex
+// _____________________________________________________________________________  changeLogo
+const logoMain = document.querySelector(".logo-main");
+const logoAnother = document.querySelector(".logo-logo");
+
+swiper.on("slideChange", function () {
+  console.log(swiper);
+  if (swiper.activeIndex === 0) {
+    logoMain.classList.add("logo-active");
+    logoAnother.classList.remove("logo-active");
+  } else {
+    logoMain.classList.remove("logo-active");
+    logoAnother.classList.add("logo-active");
+  }
+});
+
+// _____________________________________________________________________________  tabs product
+
+const tabsTitles = document.querySelectorAll(".product-part__section-title");
+
+const tabsContent = document.querySelectorAll(".product-part__section");
+let prevTitleNode = tabsTitles[0]
+tabsTitles.forEach((titleNode) => {
+  
+  titleNode.addEventListener("click", () => {
+    let activeTabContent;
+    prevTitleNode.classList.remove('tab-title--active')
+    titleNode.classList.add("tab-title--active");
+    prevTitleNode = titleNode
+    tabsContent.forEach((contentNode) => {
+      contentNode.classList.remove("tab-content--active");
+      
+      if (
+        contentNode.attributes["tab-content"].nodeValue ===
+        titleNode.attributes["tab-title"].nodeValue
+      ) {
+        contentNode.classList.add("tab-content--active");
+        
+      }
+    });
+    titleNode.attributes["tab-title"].nodeValue;
+  });
+});
+
+// _____________________________________________________________________________  checkboxex
 const fileInput = document.querySelector(".custom-file input");
 
 function declOfNum(number, titles) {
@@ -174,7 +218,7 @@ fileInput?.addEventListener("change", (e) => {
   }
 });
 
-// ______ hiddenMainScreen
+// _____________________________________________________________________________ hiddenMainScreen
 
 const mainScreen = document.querySelector(".main-screen");
 const content = document.querySelector(".wrapper");
@@ -187,7 +231,7 @@ mainScreen.addEventListener("click", function () {
     myTimer = null;
   }
 
-  myTimer = setTimeout(someWork, 500000);
+  myTimer = setTimeout(someWork, 15000);
 });
 
 content.addEventListener("click", () => {
@@ -196,7 +240,7 @@ content.addEventListener("click", () => {
     myTimer = null;
   }
 
-  myTimer = setTimeout(someWork, 500000);
+  myTimer = setTimeout(someWork, 15000);
 });
 function someWork() {
   mainScreen.classList.remove("main-screen--unvisible");

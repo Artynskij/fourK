@@ -17,7 +17,8 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__logo">
-          <div class="logo-logo">НЕВА 2023</div>
+          <div class="logo-main logo-active"><img src="./img/logo/mainLogo.png"/></div>
+          <div class="logo-logo ">НЕВА 2023</div>
           <div class="logo-date">18 СЕНТЯБРЯ 2023 г. 08:50</div>
         </div>
         <div class="header__navbar">
@@ -25,7 +26,7 @@
           <div class="navbar-item navbar-services">Услуги</div>
           <div class="navbar-item navbar-projects">Проекты</div>
           <div class="navbar-item navbar-partners">Партнеры</div>
-          <div class="navbar-item open__modal" data-path="invite-popup--form">
+          <div class="navbar-item navbar-send-bussines open__modal" data-path="invite-popup--form">
             Отправить визитку
           </div>
           <div class="navbar-item navbar-contacts">Контакты</div>
@@ -40,7 +41,75 @@
             <!-- 1 step -->
             <div class="swiper-slide">
               <section class="content-first">
+                <div class="first-content">
+                  <div class="section-title"><h1>СУДОХОДНАЯ КОМПАНИЯ МОРВЕННА –</h1></div>
+                  <div class="first-subtitle">Ведущий российский судовладелец, оператор морского <br/> и речного грузового флота.  Буксиры, многоцелевые <br/>суда, баржи-площадки под флагом РФ.</div>
+                </div>
+                <div class="video"><img src="./img/mockGif.gif" alt=""></div>
+                <div class="map-wrapper">
+                  <div class="map">
+                    <img src="./img/map bg.svg" alt="map">
+                    <div class="location-map location-map-1">
+                      <div class="location-img"><img src="./img/location on map.svg" alt=""></div>
+                      <div class="location-title">Санкт-Петербург</div>
+                    </div>
+                    <div class="location-map location-map-2">
+                      <div class="location-img"><img src="./img/location on map.svg" alt=""></div>
+                      <div class="location-title">Москва</div>
+                    </div>
+                    <div class="location-map location-map-3">
+                      <div class="location-img"><img src="./img/location on map.svg" alt=""></div>
+                      <div class="location-title">Астрахань</div>
+                    </div>
+                    <div class="ship-map ship-map-1">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Баренцево море</div>
+                    </div>
+                    <div class="ship-map ship-map-2">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Северный Морской Путь</div>
+                    </div>
+                    <div class="ship-map ship-map-3">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Карское море</div>
+                    </div>
+                    <div class="ship-map ship-map-4">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Печорское море</div>
+                    </div>
+                    <div class="ship-map ship-map-5">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Белое море</div>
+                    </div>
+                    <div class="ship-map ship-map-6">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Внутренние водные пути России</div>
+                    </div>
+                    <div class="ship-map ship-map-7">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Балтийское море</div>
+                    </div>
+                    <div class="ship-map ship-map-8">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Азовское море</div>
+                    </div>
+                    <div class="ship-map ship-map-9">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Черное море</div>
+                    </div>
+                    <div class="ship-map ship-map-10">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Каспийское море</div>
+                    </div>
+                    <div class="ship-map ship-map-11">
+                      <div class="ship-img"><img src="./img/ship on map.svg" alt=""></div>
+                      <div class="ship-title">Средиземное море</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="first-button">СПИСОК <br/> ДОСТУПНОГО ФЛОТА</div>
                 
+
               </section>
             </div>
 
@@ -409,10 +478,17 @@
             <div class="swiper-slide">
               <section class="content-product">
                 <div class="section-title"><h1>ФЛОТ КОМПАНИИ</h1></div>
-                <div class="product-part__section">
-                  <div class="product-part__section-title">
+                <div class="product-tabs">
+                  <div class="product-part__section-title tab-title--active" tab-title="first">
                     <div>буксиры</div>
                   </div>
+                  <div class="product-part__section-title" tab-title="second">
+                    <div>баржи</div>
+                  </div>
+                </div>
+                
+                <div class="product-part__section tab-content--active" tab-content="first">
+                  
                   <div class="product-part__section-subtitle">
                     В нашем арсенале представлен модернизированный буксирный
                     флот советской постройки – типы МБ, ОТА-800,
@@ -561,10 +637,8 @@
                     ></div>
                   </div>
                 </div>
-                <div class="product-part__section">
-                  <div class="product-part__section-title">
-                    <div>баржи</div>
-                  </div>
+                <div class="product-part__section" tab-content="second">
+                 
                   <div class="product-part__section-subtitle">
                     В собственности компании имеется более 30 барж для перевозок
                     негабаритных, крупнотоннажных, навалочных грузов,
