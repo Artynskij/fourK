@@ -83,6 +83,7 @@ body{
   /* line-height: 24px; */
   font-family: "ExoReg";
   /* touch-action: none; */
+  background-color: #ffff;
 }
 
 @media (min-width:2000px) {
@@ -130,7 +131,7 @@ body{
 h1{
   text-transform: uppercase;
   font-family: 'ExoBold';
-  font-size: 3em;
+  font-size: 2em;
   /* line-height: 1em; */
   padding: .4em 0;
 }

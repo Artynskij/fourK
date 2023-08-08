@@ -210,6 +210,7 @@
   width: 1em !important;
   height: 1em !important;
   background: #373737;
+  margin: 1em 0 !important;
 }
 .swiper .swiper-pagination-bullet-active {
   width: 1em !important;
@@ -220,7 +221,7 @@
 
 .swiper-staff {
   /* height: 50%; */
-  width: 70%;
+  width: 80%;
   overflow: hidden;
   /* position: relative; */
 }
@@ -315,8 +316,8 @@
 
 .button-gotop {
   position: absolute;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 1.5%;
   padding: 0.7em;
   border: 0.1em solid #004a99;
   border-radius: 50%;
@@ -366,15 +367,17 @@
   /* background-color: #004a99; */
 }
 .first-content {
-  padding-left: 18%;
+  padding-left: 30%;
 }
 .content-first .section-title {
+ 
   display: flex;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 
   align-items: center;
 }
 .content-first h1 {
+  font-size: 2.5em;
   height: 100%;
   background: linear-gradient(324deg, #e30613 0%, #c5000c 100%);
 
@@ -384,7 +387,7 @@
 .first-subtitle {
   /* width: 60%; */
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 .first-button {
   position: absolute;
@@ -563,16 +566,20 @@
 /* ------------------------------------------------------ staff ------------------------------------------------------*/
 .content-staff {
 }
+.content-staff .section-title{
+  padding-bottom: 1em;
+}
 .staff-title {
 }
 .staff-title h1 {
 }
 .card-staff {
-  height: 80%;
+  height: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 0 .5em;
 }
 .card-staff .card-top {
 }
@@ -703,6 +710,7 @@
   padding: 0.3em 0.5em;
   transition: all 0.4s;
   opacity: 0.5;
+  cursor: pointer;
 }
 .product-part__section-title:first-child {
   margin-right: 1em;
@@ -728,7 +736,7 @@
 }
 .product-part__section-subtitle {
   text-align: center;
-  padding: 2em 5em;
+  padding: 1em;
   font-size: 1.1em;
   color: #373737;
 }
@@ -738,7 +746,7 @@
   justify-content: space-around;
 }
 .card-product {
-  padding: 0 25%;
+  padding: 0 15%;
 }
 .card-product .card-img {
   display: flex;
@@ -746,7 +754,7 @@
   padding-bottom: 0.9em;
 }
 .card-product img {
-  max-height: 8em;
+  max-height: 6em;
 }
 .card-product .card-name {
   text-align: center;
@@ -1150,7 +1158,7 @@
 
 .custom-radio {
   position: relative;
-  padding-left: 1.5em;
+  padding-left: 2.5em;
 
   color: #373737;
   font-size: 1em;
@@ -1217,7 +1225,7 @@
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; */
-  animation: rotation 10s linear infinite;
+  animation: rotation 30s linear infinite;
 }
 @keyframes rotation {
   from {

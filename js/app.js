@@ -231,7 +231,7 @@ mainScreen.addEventListener("click", function () {
     myTimer = null;
   }
 
-  myTimer = setTimeout(someWork, 15000);
+  myTimer = setTimeout(someWork, 180000);
 });
 
 content.addEventListener("click", () => {
@@ -240,7 +240,7 @@ content.addEventListener("click", () => {
     myTimer = null;
   }
 
-  myTimer = setTimeout(someWork, 15000);
+  myTimer = setTimeout(someWork, 180000);
 });
 function someWork() {
   mainScreen.classList.remove("main-screen--unvisible");
