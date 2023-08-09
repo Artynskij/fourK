@@ -211,12 +211,14 @@
   height: 1em !important;
   background: #373737;
   margin: 1em 0 !important;
+  box-shadow: 0em .1em .5em #222121;
 }
 .swiper .swiper-pagination-bullet-active {
   width: 1em !important;
   height: 1em !important;
   border: 0.2em solid red !important;
   background-color: transparent !important;
+  box-shadow: 0em .1em .3em red;
 }
 
 .swiper-staff {
@@ -361,6 +363,28 @@
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+    overflow-x: hidden;
+}
+.section-title  .flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  transform: skewX(-45deg); 
+  animation: flareAnimation;
+  left: -150%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+  animation: flareAnimation 2s infinite linear; 
+}
+
+@keyframes flareAnimation {
+  0% {
+      left: -150%;
+  }
+  100% {
+      left: 150%;
+  }
 }
 /* ------------------------------------------------------ first ------------------------------------------------------*/
 .content-first {

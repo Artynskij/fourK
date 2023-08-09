@@ -130,10 +130,12 @@ modalOverlay.addEventListener("click", (e) => {
 });
 
 // _____________________________________________________________________________ gotTop
-const goTop = document.querySelector(".button-gotop");
-goTop.addEventListener("click", () => {
-  swiper.slideTo(0, 3000);
-});
+const goTop = document.querySelectorAll(".button-gotop");
+goTop.forEach((but) => {
+  but.addEventListener("click", () => {
+    swiper.slideTo(0, 3000);
+  });
+})
 // _____________________________________________________________________________ navBar
 document.querySelector(".navbar-flot").addEventListener("click", () => {
   swiper.slideTo(4, 3000);
