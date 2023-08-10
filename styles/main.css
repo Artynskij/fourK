@@ -747,7 +747,7 @@
   text-decoration: underline;
 }
 .product-part__section-title div {
-  font-size: 1.3em;
+  font-size: 1em;
   text-transform: uppercase;
   background: linear-gradient(
     173deg,
@@ -1119,8 +1119,8 @@
   transition: all 0.3s;
 }
 .input-line {
-  width: calc(100% -1em);
-  height: 0.1em;
+  /* width: calc(100% -1em); */
+  height: 0.04em;
   background-color: #373737;
   margin: 0 1.1em;
   transform: translate(0, -0.7em);

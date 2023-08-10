@@ -247,59 +247,66 @@ content.addEventListener("click", () => {
 function someWork() {
   mainScreen.classList.remove("main-screen--unvisible");
 }
-// animation ___________
-// const canvas = document.querySelector("#canvas");
-// const context = canvas.getContext("2d");
-// canvas.width = 250;
-// canvas.height = 250;
-// console.log(Math.PI);
 
-// let angle = 0;
 
-// animation({
-//   clear() {
-//     context.clearRect(0, 0, canvas.width, canvas.height);
-//   },
-//   update() {
-//     angle += Math.PI * 0.01;
-//   },
-//   render() {
-//     context.beginPath();
-//     context.arc(
-//       canvas.width / 2 + 100 * Math.cos(angle),
-//       canvas.height / 2 + 100 * Math.sin(angle),
-//       50,
-//       0,
-//       Math.PI * 2
-//     );
-//     context.fillStyle = "green";
-//     context.fill();
-//   },
-// });
 
-// function animation(obj) {
-//   const { clear, update, render } = obj;
-//   let pTimestamp = 0;
+// _____________________________________________________________________________ timeInHeader
+const rusDay = {
+  0: "Вс",
+  1: "Пн",
+  2: "Вт",
+  3: "Ср",
+  4: "Чт",
+  5: "Пт",
+  6: "Сб",
+};
+const rusMonth = {
+  1: "Января",
+  2: "Февраля",
+  3: "Мара",
+  4: "Апреля",
+  5: "Мая",
+  6: "Июня",
+  7: "Июля",
+  8: "Августа",
+  9: "Сентября",
+  10: "Октября",
+  11: "Ноября",
+  12: "Декабря",
+};
+const numberMonth = {
+  Январь: "01",
+  Февраль: "02",
+  Март: "03",
+  Апрель: "04",
+  Май: "05",
+  Июнь: "06",
+  Июль: "07",
+  Август: "08",
+  Сентябрь: "09",
+  Октябрь: "10",
+  Ноябрь: "11",
+  Декабрь: "12",
+};
+const header = document.querySelector('.header')
+  let date = new Date();
+  let todayDay = String(date.getDate()).padStart(2, '')
+  let todayMonth = rusMonth[String(date.getMonth() + 1).padStart(2, '')]
+  let todayYear = date.getFullYear()
+  let nowHour = date.getHours() + ':' + date.getMinutes()
+  let nowMinutes = date.getMinutes()
+  let output = todayDay + ' ' + todayMonth + ' ' + todayYear + ' г. ' + nowHour;
+  header.querySelector('.logo-date').innerText = output
+setInterval(() => {
+  let date = new Date();
+  let todayDay = String(date.getDate()).padStart(2, '')
+  let todayMonth = rusMonth[String(date.getMonth() + 1).padStart(2, '')]
+  let todayYear = date.getFullYear()
+  let nowHour = date.getHours() + ':' + date.getMinutes()
+  let nowMinutes = date.getMinutes()
+  let output = todayDay + ' ' + todayMonth + ' ' + todayYear + ' г. ' + nowHour;
+  header.querySelector('.logo-date').innerText = output
+}, 10000)
 
-//   requestAnimationFrame(tick);
 
-//   function tick(timestamp) {
-//     requestAnimationFrame(tick);
 
-//     const diff = timestamp - pTimestamp;
-//     pTimestamp = timestamp;
-//     const fps = 1000/ diff
-//     const secondPart = fps / 1000
-
-//     const params = {
-//       timestamp,
-//       pTimestamp,
-//       diff,
-//       fps,
-//       secondPart
-//     }
-//     update(params)
-//     clear()
-//     render(params)
-//   }
-// }

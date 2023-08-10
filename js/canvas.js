@@ -7,13 +7,12 @@ canvas.height = 1500;
 
 
 let bezierLineOne = [350, 250, 100, 300, 450, 0]
-let bezierLineTwo = [150, 100, 300, 300, 400, 0]
 
 
 let offset = 0;
-let lineDashOne = [30, 15], offsetLength = lineDashOne.reduce((a,c) => a + c) - 1;
+let lineDashOne = [30, 15], offsetLength = lineDashOne.reduce((a,c) => a + c ) - 1;
+console.log(offsetLength);
 
-let lineDashTwo = [1, 0]
 
 let test = false
 setInterval(() => {
@@ -28,7 +27,7 @@ animation({
   },
   render() {
     createLineOne(bezierLineOne, lineDashOne);
-    createLineTwo(bezierLineTwo, lineDashTwo);
+    createLineTwo();
   },
 });
 
@@ -73,13 +72,13 @@ function createLineOne(bezierCoordinates ,lineDash) {
   context.lineWidth = 3;
   context.stroke();
 }
-function createLineTwo(bezierCoordinates, lineDashTwo) {
+function createLineTwo() {
   context.beginPath();
 
   context.moveTo(0, 400);
 
-  context.setLineDash(lineDashTwo);
-  context.bezierCurveTo(...bezierCoordinates);
+  context.setLineDash([0,0]);
+  context.bezierCurveTo(150, 100, 300, 300, 400, 0);
 
   context.strokeStyle = "#194F9C";
   context.lineWidth = 3;
