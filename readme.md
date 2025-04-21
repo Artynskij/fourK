@@ -1,5 +1,5 @@
 # Seadeals
-Коммерческая верстка сайта.
+Коммерческая верстка сайта для презентации на телевизоре 4k.
 
 [![GitHub Pages](https://img.shields.io/badge/-GitHub%20Pages-blue?style=flat-square)](https://Artynskij.github.io/fourK/)
 
